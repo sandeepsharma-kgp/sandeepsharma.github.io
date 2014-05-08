@@ -1,0 +1,184 @@
+
+/* Flexible BOx Model */
+*{
+	margin:0px;
+	padding:0px;
+	
+}
+h1{
+	
+	text-decoration:underline;
+}
+h2{
+	font: bold 14px Tahoma;
+}
+
+section,footer,aside,nav,article,hgroup,iframe{
+ display:block;
+}
+header{
+	display:inline-block;
+	font: bold 20px Tahoma;
+	display:-webkit-box;
+	-webkit-box-orient: horizontal;
+}
+
+aside{
+	display:-webkit-box;
+}
+nav{
+font: bold 18px Tahoma;
+}
+body{
+	width:100%;
+	display:-webkit-box;/*to change size of elements with the size of browser */
+	-webkit-box-pack: center; /*to centerising the children id their is resizing of window*/
+	background-image:url("images/background1.jpg");
+	background-size:cover;
+	-webkit-animation: snow 20s linear infinite;
+}
+
+#big_wrapper{
+	max-width:1000px;
+	margin:20px 0px;
+	-webkit-box-orient: vertical;/* to specify that the children will be shown how nt like block or inline but since block elements are placed one on each other so we gonaa say iy vertical*/
+	
+	-webkit-box-flex: 1;  /* 0 means fixed 1 means flexible about 2 dont know*/
+	 
+}
+
+#top_header{
+
+	border:2px solid blue;
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
+	background-image:url("images/Christmas-Backgrounds-1.jpg");
+	background-size:cover;
+	/*-webkit-box-direction:reverse;*//*will reverse the order of kids*/
+	
+	-webkit-box-pack:center; /* not need when childs are flex. if they were not then it will align the childs in center */
+	
+	/*-webkit-box-align:center;*//* verically aligned centered because all kids are flex. */
+	-webkit-border-radius:25px;
+}
+
+#head{
+margin:20px;
+font:bold 30px Tahoma;
+color:white;
+text-shadow:rgb(110,110,110) 3px 3px 5px;
+	
+}
+#top_menu{
+    display:-webkit-box;
+	-webkit-box-orient:horizontal;
+    border:1px solid red;
+	background-image:url("images/background.jpg");
+	color:white;
+	-webkit-box-pack:center;
+	-webkit-border-radius:25px;
+}
+#link1{
+	padding:5px;
+	margin:5px;
+}
+#link2{
+	padding:5px;
+	margin:5px;
+}
+
+#link3{
+	padding:5px;
+	margin:5px;
+}
+
+#link4{
+	padding:5px;
+	margin:5px;
+}
+
+#new_div{
+	display:-webkit-box;
+	-webkit-box-orient:horizontal; 
+}
+
+#main_section{
+
+	display:-webkit-box;
+	-webkit-box-flex:5;
+	margin: 5px;
+	padding:0px;
+	-webkit-border-radius:25px;
+}
+#side_news{
+	border:1px solid red;
+	margin:5px;
+	-webkit-box-flex:1;
+	background-image:url("images/Website-Background-2.jpg");
+    -webkit-box-orient:vertical;
+	padding:0px;
+	-webkit-border-radius:25px;
+}
+
+#kid0{
+	
+	-webkit-box-orient:center;
+	padding:20px;
+	margin:1px;
+	
+}
+
+#kid1{
+	
+	-webkit-box-orient:center;
+	padding:20px;
+	margin:1px;
+	
+}
+
+
+
+
+#kid{
+	border:1px solid red;
+	background-image:url("images/Website-Background-10.jpg");
+	font: bold 18px Tahoma;
+	-webkit-border-radius:25px;
+
+	margin:5px;
+	text-align:center;
+	color:grey;
+	
+	
+	/*width:60px;*//* no need because it's flexible */
+	/*-webkit-box-flex:2;*//* having 2 will divide the box mommy in 1+2+1+1=5  and kid 2 will take double of space that all are taking*/
+	
+	
+}
+
+#the_footer{
+	text-align:center;
+	padding::20px;
+	border-top:2px solid green;
+	background-image:url("images/Website-Background-10.jpg");
+}
+#me_gist li{
+	list-style:none;
+	background-image:url("images/Website-Background-10.jpg");
+}
+article{
+	
+	padding:2px;
+	margin-bottom: 0px;
+	-webkit-box-flex:1;
+	display:-webkit-box;
+}
+#_frame{
+	-webkit-box-flex:1;
+	padding:20px;
+	-webkit-border-radius:25px;
+}
+article footer /* to apply style footer only in article */{
+float:right; 
+
+}

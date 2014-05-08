@@ -1,0 +1,48 @@
+*{
+}
+#mommy{
+	border:2px solid blue;
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
+	/*-webkit-box-direction:reverse;*//*will reverse the order of kids*/
+	width:700px;
+	/*-webkit-box-pack:center;*/ /* not need when childs are flex. if they were not then it will align the childs in center */
+	height:300px;
+	/*-webkit-box-align:center;*//* verically aligned centered because all kids are flex. */
+	-webkit-box-align:stretch;/* thats what is by default in flex box model */
+}
+#kid1{
+	border:2px solid red;
+	background:yellow;
+	padding:20px;
+	margin:10px;
+	-webkit-box-flex:1;
+	height:100px;
+}
+#kid2{
+	border:2px solid red;
+	background:red;
+	padding:20px;
+	margin:10px;
+	/*width:60px;*//* no need because it's flexible */
+	/*-webkit-box-flex:2;*//* having 2 will divide the box mommy in 1+2+1+1=5  and kid 2 will take double of space that all are taking*/
+	-webkit-box-flex:1;
+	height:100px;
+}
+#kid3{
+	border:2px solid red;
+	background:green;
+	padding:20px;
+	margin:10px;
+	/*-webkit-box-ordinal-group:4;*/ /* will place this box at third position in this case at the place of third child..*/
+	-webkit-box-flex:1;
+	height:100px;
+}
+#kid4{
+	border:2px solid red;
+	background:blue;
+	padding:20px;
+	margin:10px;
+	-webkit-box-flex:1;
+	height:100px; 
+}

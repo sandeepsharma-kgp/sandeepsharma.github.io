@@ -1,0 +1,29 @@
+body{
+	text-align:center;
+}
+
+#box{
+	display:block;
+	width:500px;
+	margin:50px auto;
+	padding:15px;
+	text-align:center;
+	border:1px solid blue;
+	/*background:orange;*/
+	/*background:-webkit-linear-gradient(45deg,black,white);*//*  have three parameters first one can be angle or top or bottom or right or left that's where from u want to start */
+	background:-webkit-radial-gradient(center,circle,red 20%,orange 50%);/* radial will produce gradient first parameter is to change in the center second will change to ellipse or circle only *//* red 0% means the fading of red will start from center and orange  50% ie after 50% of box orange will dtart and faded  
+	/* red 20% will put some solid red initially then fading */
+	-webkit-border-radius:25px;
+	/*-webkit-box-shadow:rgb(110,110,110) 8px 8px 8px inset;*//* two parameters  at least after rgp 8px 8px (8px-right 8px-down )*/
+/* -8px-left and  -8px will led to top shadow and the third parameter after this will decide the blur in shadow of 8px*/
+/* inset is extra parameter will make the box shadowed!! */	
+/* it will not work for text but only for box * /*/
+-webkit-box-shadow:rgb(110,110,110) 8px 8px 8px;
+
+}
+
+#text{
+	font:bold 30px Century Gothic;
+	/* we use text-shadow for shadowing texts  */
+	text-shadow:rgb(110,110,110) 3px 3px 5px; /* don't use webkit for shadowing text */
+}

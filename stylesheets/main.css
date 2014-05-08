@@ -1,0 +1,98 @@
+*{
+margin:0px;
+padding :0px;
+}
+
+h1{
+	font: bold 20px Tahoma;
+
+}
+
+h2{
+	font:bold 14px Tahoma;
+	
+}
+//writing all ids to remember
+
+header,section,footer,aside,nav,
+articles{
+	text-align:center;
+    
+
+}
+hgroup{
+  dispaly:block;
+}
+body{
+	text-align:center; 
+}
+#big_wrapper{
+	border:1px solid black;
+	width:1000px; 
+	margin: 20px auto;
+	text-align:left;
+}
+#top_header{
+	background:yellow;
+	border:1px solid blue;
+	padding: 20px;
+} 
+
+#top_menu{
+    display:-webkit-box;
+	-webkit-box-orient:horizontal;
+    border:1px solid red;
+	background:blue;
+	color:white;
+	-webkit-box-pack:center;
+}
+#link1{
+	padding:5px;
+	margin:5px;
+}
+#link2{
+	padding:5px;
+	margin:5px;
+}
+
+#link3{
+	padding:5px;
+	margin:5px;
+}
+#main_section{
+	float: left;
+	width:660px;
+	margin:30px;  /* 720px , 280px left */
+}
+
+#side_news{
+	float:left;
+	width:220px;
+	margin:20px 0px;
+	padding:30px;  /* 720+220+30+30=1000px */
+	background:#66CCCC;
+}
+
+#the_footer{
+	clear:both;
+	text-align:center;
+	padding:20px;
+	border-top:2px solid green;
+}
+
+article{
+	background: #FFFBCC;
+	border: 1px solid red;
+	padding:0px;
+	margin-bottom: 0px;
+	display:-webkit-box;
+}
+#_iframe{
+ -webkit-box-flex:1;
+}
+
+
+article footer /* to apply style footer only in article */{
+float:right; 
+
+}
